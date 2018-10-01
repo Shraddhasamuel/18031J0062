@@ -1,0 +1,194 @@
+QUICKFIND
+Array id[] = 0 1 2 3 4 5 6 7 8 9
+id[i]=i;
+Array = 0 1 2 3 4 5 6 7 8 9
+
+union(9,0)
+index= 0 1 2 3 4 5 6 7 8 9
+union= 0 1 2 3 4 5 6 7 8 0
+loop count=1;
+
+union(3,4)
+index= 0 1 2 3 4 5 6 7 8 9
+union= 0 1 2 4 4 5 6 7 8 0
+loop count=2;
+
+union(5,8)
+index= 0 1 2 3 4 5 6 7 8 9
+union= 0 1 2 4 4 8 6 7 8 0
+loop count=3;
+
+union(7,2)
+index=0 1 2 3 4 5 6 7 8 9
+union= 0 1 2 4 4 8 6 2 8 0
+loop count=4;
+
+union(2,1)
+index= 0 1 2 3 4 5 6 7 8 9
+union= 0 1 1 4 4 5 6 1 8 0
+loop count=5;
+
+union(5,7)
+index= 0 1 2 3 4 5 6 7 8 9
+union= 0 1 1 4 4 1 6 1 1 0
+loop count=6;
+
+union(0,3)
+index= 0 1 2 3 4 5 6 7 8 9
+union= 4 1 1 4 4 1 6 1 1 4
+loop count=7;
+
+union(4,2)
+index= 0 1 2 3 4 5 6 7 8 9
+union= 1 1 1 1 1 1 6 1 1 1
+loop count=8;
+
+
+QUICK-UNION
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+for(i=0;i<id.size;i++)
+id[i]=i;
+elements= 0 1 2 3 4 5 6 7 8 9
+count=0;
+
+union(9,0)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 0 1 2 3 4 5 6 7 8 0
+count=1;
+
+union(3,4)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 0 1 2 4 4 5 6 7 8 0
+count=2;
+
+union(5,8)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 0 1 2 4 4 8 6 7 8 0
+count=3;
+
+union(7,2)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 0 1 2 4 4 8 6 2 8 0
+count=4;
+
+union(2,1)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 0 1 1 4 4 8 6 2 8 0
+count=5;
+
+union(5,7)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 0 1 1 4 4 8 6 2 2 0
+count=6;
+
+union(0,3)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 4 1 1 4 4 2 6 2 2 0
+count=7;
+
+union(4,2)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 4 1 1 4 2 2 6 2 2 0
+count=8;
+
+
+Weighted-Quick Union
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+id[i]=i;
+elements= 0 1 2 3 4 5 6 7 8 9
+count=0;
+
+union(9,0)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 0 1 2 3 4 5 6 7 8 0
+count=1;
+
+union(3,4)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 0 1 2 4 4 5 6 7 8 0
+count=2;
+
+union(5,8)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 0 1 2 4 4 8 6 7 8 0
+count=3;
+
+union(7,2)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 0 1 2 4 4 8 6 2 8 0
+count=4;
+
+union(2,1)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 0 2 2 4 4 8 6 2 8 0
+count=5;
+
+union(5,7)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 0 2 2 4 4 8 6 2 2 0
+count=10;
+
+union(0,3)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 4 2 2 4 4 8 6 2 1 0
+count=15;
+
+union(4,2)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 4 2 2 4 1 8 6 2 2 0
+count=23;
+
+
+Weighted-Quick Union with Path Compression
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+id[i]=i;
+elements= 0 1 2 3 4 5 6 7 8 9
+count=0;
+
+union(9,0)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 0 1 2 3 4 5 6 7 8 0
+count=1;
+
+union(3,4)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 0 1 2 4 4 5 6 7 8 0
+count=2;
+
+union(5,8)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 0 1 2 4 4 8 6 7 8 0
+count=3;
+
+union(7,2)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 0 1 2 4 4 8 6 2 8 0
+count=4;
+
+union(2,1)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 0 2 2 4 4 8 6 2 8 0
+count=5;
+
+union(5,7)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 0 2 2 4 4 8 6 2 2 0
+count=10;
+
+union(0,3)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 4 2 2 4 4 8 6 2 1 0
+count=15;
+
+union(4,2)
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 4 2 2 4 1 8 6 2 2 0
+count=23;
+
+Finding the root of 9
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 1 2 2 4 1 8 6 2 2 0
+
+connecting node 4 to root 1
+Array id[]= 0 1 2 3 4 5 6 7 8 9
+elements= 1 2 2 4 1 8 6 2 2 0
