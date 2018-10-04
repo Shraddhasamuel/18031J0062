@@ -1,5 +1,3 @@
-package Per;
-
 import java.util.Scanner;
 
 class Percolation {
