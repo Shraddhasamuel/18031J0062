@@ -1,9 +1,11 @@
- class Solution 
+import java.util.Scanner;
+
+class Solution 
 { 
     static class stack  
     { 
         int top=-1; 
-        char items[] = new char[100]; 
+        char items[] = {}; 
   
         void push(char x)  
         { 
@@ -16,7 +18,7 @@
                 items[++top] = x; 
             } 
         } 
-  
+
         char pop()  
         { 
             if (top == -1)  
@@ -94,7 +96,8 @@
 
     public static void main(String[] args)  
     { 
-        char exp[] = new char[2000];
+    	Scanner sc=new Scanner(System.in);
+        char exp[] = sc.next().toCharArray();
         for(int i=0;i<exp.length;i++)
         {
           if (areParenthesisBalanced(exp)) 
