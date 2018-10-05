@@ -113,7 +113,7 @@ public class Solution
     /*driver program to test above functions*/
     public static void main(String[] args)  
     { 
-        char exp[] = {'{','(',')','}','[',']'}; 
+        char exp[] = {};
           if (areParenthesisBalanced(exp)) 
             System.out.println("Balanced "); 
           else
