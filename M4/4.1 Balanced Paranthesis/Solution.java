@@ -1,10 +1,9 @@
-
-public class Solution 
+ class Solution 
 { 
     static class stack  
     { 
         int top=-1; 
-        char items[] = new char[2000]; 
+        char items[] = new char[100]; 
   
         void push(char x)  
         { 
@@ -43,15 +42,22 @@ public class Solution
     static boolean isMatchingPair(char character1, char character2) 
     { 
        if (character1 == '(' && character2 == ')') 
+       {
          return true; 
-       else if (character1 == '{' && character2 == '}') 
-         return true; 
-       else if (character1 == '[' && character2 == ']') 
-         return true; 
-       else
-         return false; 
-    } 
-      
+       }
+         else if (character1 == '{' && character2 == '}') 
+         {
+        	 return true; 
+         }
+         else if (character1 == '[' && character2 == ']') 
+         {
+          	 return true; 
+         }
+         else
+         {
+        	 return false; 
+         } 
+    }
     
     static boolean areParenthesisBalanced(char exp[]) 
     { 
@@ -68,7 +74,7 @@ public class Solution
                    return false; 
                }  
  
-             else if ( !isMatchingPair(st.pop(), exp[i]) )
+             else if ( !isMatchingPair(st.pop(), exp[i]) ) 
                { 
                    return false; 
                } 
@@ -77,8 +83,10 @@ public class Solution
        } 
           
        if (st.isEmpty()) 
+       {
          return true;
-       else
+       }
+         else
          {   
              return false; 
          }  
@@ -86,14 +94,17 @@ public class Solution
 
     public static void main(String[] args)  
     { 
-        char exp[] = new char[2000] ;
+        char exp[] = new char[2000];
         for(int i=0;i<exp.length;i++)
         {
           if (areParenthesisBalanced(exp)) 
+          {
             System.out.println("YES"); 
-          else
-            System.out.println("NO");
-        }
-    } 
-  
-} 
+          }
+            else
+            {
+            	System.out.println("NO");
+            }
+        } 
+    }
+}
