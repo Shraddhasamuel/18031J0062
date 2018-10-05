@@ -115,9 +115,9 @@ public class Solution
     { 
         char exp[] = {};
           if (areParenthesisBalanced(exp)) 
-            System.out.println("Balanced "); 
+            System.out.println("YES"); 
           else
-            System.out.println("Not Balanced ");   
+            System.out.println("NO ");   
     } 
   
 } 
