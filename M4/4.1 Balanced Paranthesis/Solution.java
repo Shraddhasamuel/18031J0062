@@ -4,7 +4,7 @@ public class Solution
     static class stack  
     { 
         int top=-1; 
-        char items[] = new char[100]; 
+        char items[] = new char[2000]; 
   
         void push(char x)  
         { 
@@ -68,7 +68,7 @@ public class Solution
                    return false; 
                }  
  
-             else if ( !isMatchingPair(st.pop(), exp[i]) ) 
+             else if ( !isMatchingPair(st.pop(), exp[i]) )
                { 
                    return false; 
                } 
