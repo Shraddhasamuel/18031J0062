@@ -1,0 +1,20 @@
+Activity 4
+was
+best
+times
+of
+the
+was
+the
+it
+
+Activity 5
+a: True
+b: False
+c: True
+d: True
+e: True
+f: False
+g: False
+h: True
+
