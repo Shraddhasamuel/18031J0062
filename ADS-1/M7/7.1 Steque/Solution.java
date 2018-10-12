@@ -2,70 +2,69 @@ import java.util.Scanner;
 
 class Node
 {
-	Node front,rear;
+	Node head;
 	int data;
 	Node next;
 	
 	Node(int d)
 	{
 		data=d;
-		front=null;
-		rear=null;
 		next=null;
 	}
 }
 class Steque
 {
-	private Node front,rear;
-	
+	private Node head;
+	private Node tail;
 	Steque()
 	{
-		front=null;
-		rear=null;
+		head=null;
+		tail=null;
 	}
 	
 void push(int d)
 {
-	if(rear==null)
+	if(head==null)
 	{
-		rear=new Node(d);
+		head=tail=head.next;
+		head=new Node(d);
+		
 	}
 	else
 	{
-		rear=rear.next;
-		rear=new Node(d);
+		head=tail=new Node(d);
 	}
 }
 
 int pop()
 {
-	if(front==null)
+	if(head==null)
 	{
-		System.out.println("Empty");
+		System.out.println("List is empty");
 	}
 	else
 	{
-		front=null;
-		front=front.next;
+		head=null;
+		head.next=head;
 	}
-	while(front!=null)
+	while(head!=tail)
 	{
-		System.out.println(front);
+		System.out.println(head);
 	}
-	return 0;
+	return 1;
 }
 
 
 void enqueue(int d)
 {
-	if(rear==null)
+	if(tail==null)
 	{
-		rear=new Node(d);
+		tail=new Node(d);
 	}
 	else
 	{
-		rear=rear.next;
-		rear=new Node(d);
+		tail=tail.next;
+		tail=new Node(d);
 	}
 }
 
