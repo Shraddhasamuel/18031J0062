@@ -77,11 +77,11 @@ class Solution
 	{
 		Steque st = new Steque();
 		Scanner sc = new Scanner(System.in);
-		String a = sc.nextLine() ;		
-		String b[] = a.split("\n");
-		for(int i = 0; i < b.length; i++)
+		int t=sc.nextInt();
+		for(int i=0;i<t;i++)
 		{
-			String ch = sc.nextLine();
+			String ch=sc.nextLine();
 		}
+		
 	}
 }
