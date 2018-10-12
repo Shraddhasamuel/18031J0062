@@ -47,11 +47,6 @@ int pop()
 		head = null;
 		head.next = head;
 	}
-	while(head!=null)
-	{
-		System.out.println(head);
-		head = head.next;
-	}
 	return 0;
 }
 
@@ -82,6 +77,7 @@ class Solution
 		{
 			String ch=sc.nextLine();
 		}
+		
 		
 	}
 }
