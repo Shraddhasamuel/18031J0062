@@ -76,10 +76,10 @@ class Solution
 	{
 		Steque st = new Steque();
 		Scanner sc = new Scanner(System.in);
-		int t=sc.nextInt();
-		for(int i=0;i<t;i++)
+		int t = sc.nextInt();
+		for(int i = 0; i < t; i++)
 		{
-			String ch=sc.nextLine();
+			String ch = sc.nextLine();
 		}
 		
 		
