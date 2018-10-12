@@ -8,8 +8,8 @@ class Node
 	
 	Node(int d)
 	{
-		data=d;
-		next=null;
+		data = d;
+		next = null;
 	}
 }
 class Steque
@@ -18,39 +18,39 @@ class Steque
 	private Node tail;
 	Steque()
 	{
-		head=null;
-		tail=null;
+		head = null;
+		tail = null;
 	}
 	
 void push(int d)
 {
-	if(head==null)
+	if(head == null)
 	{
-		head=tail=head.next;
-		head=new Node(d);
+		head = head.next;
+		head = tail = new Node(d);
 		
 	}
 	else
 	{
-		head=tail=new Node(d);
+		head = tail = new Node(d);
 	}
 }
 
 int pop()
 {
-	if(head==null)
+	if(head == null)
 	{
 		System.out.println("List is empty");
 	}
 	else
 	{
-		head=null;
-		head.next=head;
+		head = null;
+		head.next = head;
 	}
 	while(head!=null)
 	{
 		System.out.println(head);
-		head=head.next;
+		head = head.next;
 	}
 	return 0;
 }
@@ -58,14 +58,14 @@ int pop()
 
 void enqueue(int d)
 {
-	if(tail==null)
+	if(tail == null)
 	{
-		tail=new Node(d);
+		tail = new Node(d);
 	}
 	else
 	{
-		tail=tail.next;
-		tail=new Node(d);
+		tail = tail.next;
+		tail = new Node(d);
 	}
 }
 
@@ -75,13 +75,13 @@ class Solution
 {
 	public static void main(String args[])
 	{
-		Steque st=new Steque();
-		Scanner sc=new Scanner(System.in);
-		String a =sc.nextLine() ;		
+		Steque st = new Steque();
+		Scanner sc = new Scanner(System.in);
+		String a = sc.nextLine() ;		
 		String b[] = a.split("\n");
-		for(int i=0;i<b.length;i++)
+		for(int i = 0; i < b.length; i++)
 		{
-			String ch=sc.nextLine();
+			String ch = sc.nextLine();
 		}
 	}
 }
