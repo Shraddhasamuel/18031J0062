@@ -76,7 +76,8 @@ class Solution
 	{
 		Steque st=new Steque();
 		Scanner sc=new Scanner(System.in);
-		int i=sc.nextInt();
-		String ch=sc.nextLine();
+		String a =sc.nextLine() ;
+		int num=a.length();
+		String b[] = a.split("\n");
 	}
 }
