@@ -48,8 +48,13 @@ int pop()
 		front=null;
 		front=front.next;
 	}
+	while(front!=null)
+	{
+		System.out.println(front);
+	}
 	return 0;
 }
+
 
 void enqueue(int d)
 {
