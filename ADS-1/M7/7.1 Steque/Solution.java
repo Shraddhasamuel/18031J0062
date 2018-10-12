@@ -28,7 +28,7 @@ void push(int d)
 	{
 		head=tail=head.next;
 		head=new Node(d);
-		
+		System.out.println(head);
 	}
 	else
 	{
