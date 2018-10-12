@@ -50,8 +50,9 @@ int pop()
 	while(head!=null)
 	{
 		System.out.println(head);
+		head=head.next;
 	}
-	return 1;
+	return 0;
 }
 
 
@@ -78,12 +79,9 @@ class Solution
 		Scanner sc=new Scanner(System.in);
 		String a =sc.nextLine() ;		
 		String b[] = a.split("\n");
-		
-		
 		for(int i=0;i<b.length;i++)
 		{
 			String ch=sc.nextLine();
 		}
-		
 	}
 }
