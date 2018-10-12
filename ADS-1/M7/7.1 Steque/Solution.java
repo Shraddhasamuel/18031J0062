@@ -47,7 +47,11 @@ int pop()
 		head = null;
 		head.next = head;
 	}
-	return 0;
+	while(head != null)
+	{
+		System.out.println(head);
+	}
+	return 1;
 }
 
 
