@@ -28,7 +28,7 @@ void push(int d)
 	{
 		head=tail=head.next;
 		head=new Node(d);
-		System.out.println(head);
+		
 	}
 	else
 	{
@@ -76,8 +76,13 @@ class Solution
 	{
 		Steque st=new Steque();
 		Scanner sc=new Scanner(System.in);
-		String a =sc.nextLine() ;
-		int num=a.length();
+		String a =sc.nextLine() ;		
 		String b[] = a.split("\n");
+		
+		
+		for(int i=0;i<b.length;i++)
+		{
+			String ch=sc.nextLine();
+		}
 	}
 }
