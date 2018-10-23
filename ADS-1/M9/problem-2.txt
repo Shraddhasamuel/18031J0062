@@ -1,0 +1,11 @@
+step-1: E A S Y Q U E S T I O N
+
+step-2: E A     S Y     Q U      E S     T I     O N
+	
+step-3: A E     S Y     Q U      E S     I T     N O
+
+step-4: A E S Y	E Q S U          I N O T
+
+step-5: A E E Q S U Y	I N O T
+
+step-6:    A E E I N O Q S S T U Y
