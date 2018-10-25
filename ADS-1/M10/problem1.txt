@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+class fact1 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int num = sc.nextInt();
+		int fact =1;
+		fact2(num,fact);
+		System.out.println(fact);
+
+	}
+
+	public static int fact2(int num, int fact)
+	{
+		if(num == 0)
+		{
+			return fact;
+		}
+		else
+		{
+			fact=fact*num;
+			num=num+1;
+			fact2(num,fact);
+		}
+		return fact;
+	}
+
+}
