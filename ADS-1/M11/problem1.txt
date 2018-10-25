@@ -1,0 +1,25 @@
+E A S Y Q U E S T I O N
+pivot=N;
+
+E A E I N U S S T Y O Q
+pivot=I;
+
+E A E I N U S S T Y O Q
+pivot=E;
+
+A E E I N U S S T Y O Q
+pivot=E;
+
+A E E I N U S S T Y O Q
+pivot=A;
+
+A E E I N U S S T Y O Q
+pivot=Q;
+
+A E E I N O Q S T Y U S
+pivot=S;
+
+A E E I N O Q S S Y U T
+pivot=T;
+
+A E E I N O Q S S T U Y
