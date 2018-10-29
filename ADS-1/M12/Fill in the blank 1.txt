@@ -1,0 +1,8 @@
+private void swim(int k)
+{
+while(k>1 && less(k>k+1))
+{
+exch(k,k+1);
+k=k+1;
+}
+}
