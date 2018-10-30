@@ -14,13 +14,14 @@ class Solution
         {
             largest = r; 
         }
-        if (largest != i) 
+        /*if (largest != i) 
         { 
             int swap = str1[i]; 
             str1[i] = str1[largest]; 
             str1[largest] = swap; 
-            stringheap(str1, n, largest); 
-        }
+            
+        }*/
+        stringheap(str1, n, largest); 
      }
 	
 	static void stringheapsort(int[] s,int n)
@@ -150,10 +151,8 @@ class Solution
 	public static void main(String[] args)
 	{
 		Scanner sc=new Scanner(System.in);
-		System.out.println("1.String\n2.Integer\n3.Float\n4.Double");
-		//while(true)
+		while(true)
 		{
-			System.out.println("Enter choice:");
 			String ch=sc.nextLine();
 			switch(ch)
 			{
