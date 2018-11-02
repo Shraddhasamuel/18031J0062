@@ -1,0 +1,11 @@
+11, 6, 8, 19, 4, 17, 43, 49, 31
+
+What will be the child nodes for element 6 ? - 4,8
+
+How many leaf nodes in the resultant tree ? - 4
+
+
+How many compares (key compares) does it take to insert the last element(31) in to the tree? - 3
+
+ How many compares (key compares) does it take when we call get(8) method ? - 5
+
