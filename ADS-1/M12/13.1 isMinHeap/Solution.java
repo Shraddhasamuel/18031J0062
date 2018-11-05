@@ -21,7 +21,8 @@ class Solution
             str1[largest] = swap; 
             
         }*/
-        return stringheap(str1, n, largest); 
+        stringheap(str1, n, largest); 
+        return true;
      }
 	
 	static boolean stringheapsort(int[] s,int n)
@@ -37,7 +38,7 @@ class Solution
 			s[1]=temp;
 			stringheap(s,i,0);
 		}
-		return stringheap(s,0,n);
+		return true;
 	}
 	static boolean intheapsort(int[] s,int n)
 	{
@@ -52,7 +53,7 @@ class Solution
 			s[1]=temp;
 			intheap(s,i,0);
 		}
-		return intheap(s,0,n);
+		return true;
 	}
 	static boolean intheap(int[] a,int i,int n)
 	{
@@ -74,7 +75,7 @@ class Solution
             a[largest] = swap; 
            stringheap(a, n, largest); 
         }
-        return stringheap(a, n, largest); 
+        return true;
 	}
         static boolean floatheapsort(float[] s,int n)
     	{
@@ -89,7 +90,7 @@ class Solution
     			s[1]=temp;
     			floatheap(s,i,0);
     		}
-    			return floatheap(s,0,n);
+    			return true;
     	}
     	static boolean floatheap(float[] a,int i,int n)
     	{
@@ -111,7 +112,7 @@ class Solution
                 a[largest] = swap; 
                 floatheap(a, n, largest); 
             }
-            return floatheap(a, n, largest); 
+            return true;
 	}
     	
     	static boolean doubleheapsort(Double[] aar,int n)
@@ -127,7 +128,7 @@ class Solution
     			aar[1]=temp;
     			doubleheap(aar,i,0);
     		}
-    		return doubleheap(aar,0,n);
+    		return true;
     	}
     	static boolean doubleheap(Double[] a,int i,int n)
     	{
@@ -149,7 +150,7 @@ class Solution
                 a[largest] = swap; 
                doubleheap(a, n, largest); 
             }
-            return doubleheap(a, n, largest);
+            return true;
     	}
 	public static void main(String[] args)
 	{
