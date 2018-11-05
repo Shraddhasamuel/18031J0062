@@ -1,7 +1,7 @@
 import java.util.Scanner;
 class Solution 
 {
-	static void stringheap(int[] str1,int i,int n)
+	static boolean stringheap(int[] str1,int i,int n)
 	{
 		int largest = i;
         int l = 2*i + 1; 
@@ -21,10 +21,10 @@ class Solution
             str1[largest] = swap; 
             
         }*/
-        stringheap(str1, n, largest); 
+        return stringheap(str1, n, largest); 
      }
 	
-	static void stringheapsort(int[] s,int n)
+	static boolean stringheapsort(int[] s,int n)
 	{
 		for(int i=n/2 -1; i>=0; i++ )
 		{
@@ -37,9 +37,9 @@ class Solution
 			s[1]=temp;
 			stringheap(s,i,0);
 		}
-		stringheap(s,0,n);
+		return stringheap(s,0,n);
 	}
-	static void intheapsort(int[] s,int n)
+	static boolean intheapsort(int[] s,int n)
 	{
 		for(int i=n/2 -1; i>=0; i++ )
 		{
@@ -52,9 +52,9 @@ class Solution
 			s[1]=temp;
 			intheap(s,i,0);
 		}
-		intheap(s,0,n);
+		return intheap(s,0,n);
 	}
-	static void intheap(int[] a,int i,int n)
+	static boolean intheap(int[] a,int i,int n)
 	{
 		int largest = i;
         int l = 2*i + 1; 
@@ -72,10 +72,11 @@ class Solution
             int swap = a[i]; 
             a[i] = a[largest]; 
             a[largest] = swap; 
-            stringheap(a, n, largest); 
+           stringheap(a, n, largest); 
         }
+        return stringheap(a, n, largest); 
 	}
-        static void floatheapsort(float[] s,int n)
+        static boolean floatheapsort(float[] s,int n)
     	{
     		for(int i=n/2 -1; i>=0; i++ )
     		{
@@ -88,9 +89,9 @@ class Solution
     			s[1]=temp;
     			floatheap(s,i,0);
     		}
-    			floatheap(s,0,n);
+    			return floatheap(s,0,n);
     	}
-    	static void floatheap(float[] a,int i,int n)
+    	static boolean floatheap(float[] a,int i,int n)
     	{
     		int largest = i;
             int l = 2*i + 1; 
@@ -110,9 +111,10 @@ class Solution
                 a[largest] = swap; 
                 floatheap(a, n, largest); 
             }
+            return floatheap(a, n, largest); 
 	}
     	
-    	static void doubleheapsort(Double[] aar,int n)
+    	static boolean doubleheapsort(Double[] aar,int n)
     	{
     		for(int i=n/2 -1; i>=0; i++ )
     		{
@@ -125,9 +127,9 @@ class Solution
     			aar[1]=temp;
     			doubleheap(aar,i,0);
     		}
-    		doubleheap(aar,0,n);
+    		return doubleheap(aar,0,n);
     	}
-    	static void doubleheap(Double[] a,int i,int n)
+    	static boolean doubleheap(Double[] a,int i,int n)
     	{
     		int largest = i;
             int l = 2*i + 1; 
@@ -145,8 +147,9 @@ class Solution
                 double swap = a[i]; 
                 a[i] = a[largest]; 
                 a[largest] = swap; 
-                doubleheap(a, n, largest); 
+               doubleheap(a, n, largest); 
             }
+            return doubleheap(a, n, largest);
     	}
 	public static void main(String[] args)
 	{
@@ -168,7 +171,7 @@ class Solution
 				{
 					ar[j]=Integer.parseInt(str1[j]);
 				}
-				stringheapsort(ar,n);
+				System.out.println(stringheapsort(ar,n));
 			}
 			break;
 			
@@ -184,7 +187,7 @@ class Solution
 				{
 					ar[j]=Integer.parseInt(str1[j]);
 				}
-				intheapsort(ar,n);
+				System.out.println(intheapsort(ar,n));
 			}
 			break;
 			
@@ -201,7 +204,7 @@ class Solution
 					{
 						arr[k]=Float.parseFloat(str1[k]);
 					}
-					floatheapsort(arr,n);
+					System.out.println(floatheapsort(arr,n));
 				}
 			break;
 			
@@ -218,7 +221,7 @@ class Solution
 					{
 						aar[l]=Double.parseDouble(str1[l]);
 					}
-					doubleheapsort(aar,n);
+					System.out.println(doubleheapsort(aar,n));
 				}
 			break;	
 			}
