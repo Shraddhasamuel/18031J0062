@@ -1,4 +1,4 @@
-package ADSFINAL;
+
 import java.util.Scanner;
 class Student
 {
