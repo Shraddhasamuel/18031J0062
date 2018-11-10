@@ -1,5 +1,3 @@
-package ADSFINAL2;
-
 import java.util.Scanner;
 
 class Student
@@ -31,22 +29,26 @@ class Student
 	root=null;
 	}
 	
-    void insert(int key) { 
+    void insert(int key) 
+    { 
        root = insertele(root, key); 
     } 
    
     Node insertele(Node root, int key) 
     { 
-          if (root == null) { 
+    	if (root == null) 
+          { 
             root = new Node(key); 
             return root; 
-        } 
-
+          } 
         if (key < root.key) 
+        {
             root.left = insertele(root.left, key); 
-        else if (key > root.key) 
+        }
+        else if (key > root.key)
+        {
             root.right = insertele(root.right, key); 
-  
+        }
         return root; 
     } 
 
@@ -78,14 +80,13 @@ class Student
     		if(root.key >= key1 && root.key <= key2)
     		{
     			System.out.println(root.key);
+    		}
     	}
-    		
-    }
     }
 }
 
-class Solution {
-
+class Solution 
+{
 	public static void main(String[] args) 
 	{
 		Scanner sc=new Scanner(System.in);
@@ -100,8 +101,7 @@ class Solution {
 		{
 			int r=Integer.parseInt(str1[0]);
 			str1[1]=s.name;
-			double m=Double.parseDouble(str1[2]);
-			
+			double m=Double.parseDouble(str1[2]);		
 			s.insert(r);
 		}
 		i++;
