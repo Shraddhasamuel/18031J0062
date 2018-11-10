@@ -82,25 +82,23 @@ public class Solution
 			String st=sc.next();
 			String[] st1=st.split(" ");
 			//System.out.println(st.length());
-			for(int l=0;l<m;l++)
+			for(int j=0;j<=st1.length;j++)
 			{
-			for(int j=0;j<st.length();j++)
-			{
-				s[l]=new Student(st1[0],st1[1],Integer.parseInt(st1[2]));
-				
-				switch(Integer.parseInt(st1[2]))
+				st1[0]=sc.next();
+				st1[1]=sc.next();
+				int f=Integer.parseInt(st1[2]);
+				switch(f)
 				{
 				case 1: 
-					h.get(st1[1],Integer.parseInt(st1[2]),n);
+					h.get(st1[1],f,n);
 				break;
 				
 				case 2: 
-					h.get(st1[1],Integer.parseInt(st1[2]),n);
+					h.get(st1[1],f,n);
 					break;
 				}
-			}
-			}
 			k++;
 		}
+	}
 	}
 }
